@@ -17,6 +17,9 @@ struct Args {
     meta_path: String,
     /// List of Unicode codepoint ranges written in hex
     charset: Vec<String>,
+    /// Enable coverage-based (as opposed to SDF) rasterization with the specified number of distinct levels above 0
+    #[arg(short = 'l', long)]
+    coverage_levels: Option<u8>,
     /// Desired font pixel height
     #[arg(short, long, default_value_t = 24.0)]
     scale: f32,
@@ -167,120 +170,130 @@ fn main() {
         }
 
         next_y_adv = u32::max(next_y_adv, padded_h);
-
-        outside_buf.clear();
-        outside_buf.resize(n_pixels as usize, max_dist);
-
-        glyph.draw(|x, y, v| {
-            let idx = (((args.padding + y) * padded_w) + args.padding + x) as usize;
-            if v <= 0.5 { outside_buf[idx] = max_dist; }
-            else { outside_buf[idx] = 0.0; }
-        });
-
-        // assign vertical distances column-wise
-        for x in 0..width {
-            let x = x + args.padding;
-
-            // propagate distances downwards
-            let mut dist_step = 1.0;
-            for y in 1..padded_h {
-                let idx_here = ((y * padded_w) + x) as usize;
-                let idx_up = (((y-1) * padded_w) + x) as usize;
-
-                if outside_buf[idx_here] > outside_buf[idx_up] + dist_step {
-                    outside_buf[idx_here] = outside_buf[idx_up] + dist_step;
-                    dist_step += 2.0;
-                } else {
-                    dist_step = 1.0;
-                }
-            }
-
-            // propagate distances upwards
-            let mut dist_step = 1.0;
-            for y in (0..padded_h-1).rev() {
-                let idx_here = ((y * padded_w) + x) as usize;
-                let idx_down = (((y+1) * padded_w) + x) as usize;
-
-                if outside_buf[idx_here] > outside_buf[idx_down] + dist_step {
-                    outside_buf[idx_here] = outside_buf[idx_down] + dist_step;
-                    dist_step += 2.0;
-                } else {
-                    dist_step = 1.0;
-                }
-            }
-        }
-
-        inside_buf.clear();
-        inside_buf.resize(n_pixels as usize, 0.0);
-
-        glyph.draw(|x, y, v| {
-            let idx = (((args.padding + y) * padded_w) + args.padding + x) as usize;
-            if v <= 0.5 { inside_buf[idx] = 0.0; }
-            else { inside_buf[idx] = max_dist; }
-        });
-
-        // assign vertical distances column-wise
-        for x in 0..width {
-            let x = x + args.padding;
-            
-            // propagate distances downwards
-            let mut dist_step = 1.0;
-            for y in 1..padded_h {
-                let idx_here = ((y * padded_w) + x) as usize;
-                let idx_up = (((y-1) * padded_w) + x) as usize;
-
-                if inside_buf[idx_here] > inside_buf[idx_up] + dist_step {
-                    inside_buf[idx_here] = inside_buf[idx_up] + dist_step;
-                    dist_step += 2.0;
-                } else {
-                    dist_step = 1.0;
-                }
-            }
-
-            // propagate distances upwards
-            let mut dist_step = 1.0;
-            for y in (0..padded_h-1).rev() {
-                let idx_here = ((y * padded_w) + x) as usize;
-                let idx_down = (((y+1) * padded_w) + x) as usize;
-
-                if inside_buf[idx_here] > inside_buf[idx_down] + dist_step {
-                    inside_buf[idx_here] = inside_buf[idx_down] + dist_step;
-                    dist_step += 2.0;
-                } else {
-                    dist_step = 1.0;
-                }
-            }
-        }
-
-        // determine actual distances row-wise
-        for y in 0..padded_h {
-            for x_here in 0..padded_w {
-                let idx_here = ((y * padded_w) + x_here) as usize;
-                let mut dist_min = outside_buf[idx_here];
-                for x_there in 0..padded_w {
-                    let idx_there = ((y * padded_w) + x_there) as usize;
-                    let dist = outside_buf[idx_there] + (x_there as f32 - x_here as f32).powi(2);
-                    if dist_min > dist {
-                        dist_min = dist;
-                    }
-                }
-
-                let outside_distance = (dist_min / max_dist).clamp(0.0, 1.0);
-
-                let mut dist_min = inside_buf[idx_here];
-                for x_there in 0..padded_w {
-                    let idx_there = ((y * padded_w) + x_there) as usize;
-                    let dist = inside_buf[idx_there] + (x_there as f32 - x_here as f32).powi(2);
-                    if dist_min > dist {
-                        dist_min = dist;
-                    }
-                }
-
-                let inside_distance = (dist_min / max_dist).clamp(0.0, 1.0);
+        
+        if let Some(levels) = args.coverage_levels {
+            glyph.draw(|x, y, v| {
+                let x = next_x + args.padding + x;
+                let y = next_y + args.padding + y;
+                let pixel_value = (((v * (levels as f32)).round() / (levels as f32)) * 255.0).round() as u8;
                 
-                let signed_distance = if outside_distance > 0.0 { -outside_distance } else { inside_distance };
-                let pixel_value = (((signed_distance + 1.0) / 2.0) * 255.0).round() as u8;
-                *outbuf.get_pixel_mut(next_x + x_here, next_y + y) = image::Luma([pixel_value; 1]);
+                *outbuf.get_pixel_mut(x, y) = image::Luma([pixel_value; 1]);
+            });
+        } else {
+            outside_buf.clear();
+            outside_buf.resize(n_pixels as usize, max_dist);
+
+            glyph.draw(|x, y, v| {
+                let idx = (((args.padding + y) * padded_w) + args.padding + x) as usize;
+                if v <= 0.5 { outside_buf[idx] = max_dist; }
+                else { outside_buf[idx] = 0.0; }
+            });
+
+            // assign vertical distances column-wise
+            for x in 0..width {
+                let x = x + args.padding;
+
+                // propagate distances downwards
+                let mut dist_step = 1.0;
+                for y in 1..padded_h {
+                    let idx_here = ((y * padded_w) + x) as usize;
+                    let idx_up = (((y-1) * padded_w) + x) as usize;
+
+                    if outside_buf[idx_here] > outside_buf[idx_up] + dist_step {
+                        outside_buf[idx_here] = outside_buf[idx_up] + dist_step;
+                        dist_step += 2.0;
+                    } else {
+                        dist_step = 1.0;
+                    }
+                }
+
+                // propagate distances upwards
+                let mut dist_step = 1.0;
+                for y in (0..padded_h-1).rev() {
+                    let idx_here = ((y * padded_w) + x) as usize;
+                    let idx_down = (((y+1) * padded_w) + x) as usize;
+
+                    if outside_buf[idx_here] > outside_buf[idx_down] + dist_step {
+                        outside_buf[idx_here] = outside_buf[idx_down] + dist_step;
+                        dist_step += 2.0;
+                    } else {
+                        dist_step = 1.0;
+                    }
+                }
+            }
+
+            inside_buf.clear();
+            inside_buf.resize(n_pixels as usize, 0.0);
+
+            glyph.draw(|x, y, v| {
+                let idx = (((args.padding + y) * padded_w) + args.padding + x) as usize;
+                if v <= 0.5 { inside_buf[idx] = 0.0; }
+                else { inside_buf[idx] = max_dist; }
+            });
+
+            // assign vertical distances column-wise
+            for x in 0..width {
+                let x = x + args.padding;
+                
+                // propagate distances downwards
+                let mut dist_step = 1.0;
+                for y in 1..padded_h {
+                    let idx_here = ((y * padded_w) + x) as usize;
+                    let idx_up = (((y-1) * padded_w) + x) as usize;
+
+                    if inside_buf[idx_here] > inside_buf[idx_up] + dist_step {
+                        inside_buf[idx_here] = inside_buf[idx_up] + dist_step;
+                        dist_step += 2.0;
+                    } else {
+                        dist_step = 1.0;
+                    }
+                }
+
+                // propagate distances upwards
+                let mut dist_step = 1.0;
+                for y in (0..padded_h-1).rev() {
+                    let idx_here = ((y * padded_w) + x) as usize;
+                    let idx_down = (((y+1) * padded_w) + x) as usize;
+
+                    if inside_buf[idx_here] > inside_buf[idx_down] + dist_step {
+                        inside_buf[idx_here] = inside_buf[idx_down] + dist_step;
+                        dist_step += 2.0;
+                    } else {
+                        dist_step = 1.0;
+                    }
+                }
+            }
+
+            // determine actual distances row-wise
+            for y in 0..padded_h {
+                for x_here in 0..padded_w {
+                    let idx_here = ((y * padded_w) + x_here) as usize;
+                    let mut dist_min = outside_buf[idx_here];
+                    for x_there in 0..padded_w {
+                        let idx_there = ((y * padded_w) + x_there) as usize;
+                        let dist = outside_buf[idx_there] + (x_there as f32 - x_here as f32).powi(2);
+                        if dist_min > dist {
+                            dist_min = dist;
+                        }
+                    }
+
+                    let outside_distance = (dist_min / max_dist).clamp(0.0, 1.0);
+
+                    let mut dist_min = inside_buf[idx_here];
+                    for x_there in 0..padded_w {
+                        let idx_there = ((y * padded_w) + x_there) as usize;
+                        let dist = inside_buf[idx_there] + (x_there as f32 - x_here as f32).powi(2);
+                        if dist_min > dist {
+                            dist_min = dist;
+                        }
+                    }
+
+                    let inside_distance = (dist_min / max_dist).clamp(0.0, 1.0);
+                    
+                    let signed_distance = if outside_distance > 0.0 { -outside_distance } else { inside_distance };
+                    let pixel_value = (((signed_distance + 1.0) / 2.0) * 255.0).round() as u8;
+                    *outbuf.get_pixel_mut(next_x + x_here, next_y + y) = image::Luma([pixel_value; 1]);
+                }
             }
         }
 
@@ -344,6 +357,7 @@ fn main() {
         _ => {
             eprintln!("Failed to deduce meta data format from path: {}", args.meta_path);
             eprintln!("Supported formats are: ron, json, rkyv");
+            eprintln!("Note that JSON serialization currently does not support kerning tables.");
             return;
         },
     }
