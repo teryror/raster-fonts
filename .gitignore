@@ -1,0 +1,7 @@
+/target
+*.ttf
+*.otf
+*.png
+*.ron
+*.rkyv
+*.json
