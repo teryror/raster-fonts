@@ -2,6 +2,11 @@
 name = "raster-fonts"
 version = "0.1.0"
 edition = "2021"
+authors = ["Tristan Dannenberg"]
+description = "Bitmap font creation tool and accompanying metadata deserialization library"
+categories = ["command-line-utilities", "game-development", "graphics", "rendering"]
+keywords = ["gamedev", "graphics", "text-rendering"]
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 clap = { version = "4.0.29", features = ["derive"], optional = true }
@@ -24,6 +29,10 @@ name = "raster_fonts"
 path = "src/lib.rs"
 
 [[bin]]
-name = "font2png"
+name = "font2img"
 path = "src/main.rs"
 required-features = ["bin"]
+
+[package.metadata.docs.rs]
+features = ["serde-deserialize", "rkyv-deserialize"]
+rustdoc-args = ["--cfg", "docs_rs"]

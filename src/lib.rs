@@ -1,6 +1,13 @@
+//! De-/Serializable runtime representation of bitmap font metadata.
+
+#![cfg_attr(docs_rs, feature(doc_cfg))]
+#![deny(missing_docs)]
+#![warn(clippy::pedantic)]
+
 use std::collections::HashMap;
 use std::num::NonZeroU8;
 
+/// Coordinates and size of a rendered glyph in a packed bitmap.
 #[cfg_attr(feature = "serde-serialize", derive(serde::Serialize))]
 #[cfg_attr(feature = "serde-deserialize", derive(serde::Deserialize))]
 #[cfg_attr(feature = "rkyv", derive(rkyv::Archive))]
@@ -17,6 +24,7 @@ pub struct SourceRect {
     pub height: NonZeroU8,
 }
 
+/// [`SourceRect`] and horizontal metrics of a glyph required for text layout.
 #[cfg_attr(feature = "serde-serialize", derive(serde::Serialize))]
 #[cfg_attr(feature = "serde-deserialize", derive(serde::Deserialize))]
 #[cfg_attr(feature = "rkyv", derive(rkyv::Archive))]
@@ -35,6 +43,9 @@ pub struct BitmapGlyph {
     pub ascent: f32,
 }
 
+/// Runtime representation of all metadata for a single bitmap font.
+/// 
+/// Does not own or even reference the bitmap itself.
 #[cfg_attr(feature = "serde-serialize", derive(serde::Serialize))]
 #[cfg_attr(feature = "serde-deserialize", derive(serde::Deserialize))]
 #[cfg_attr(feature = "rkyv", derive(rkyv::Archive))]
@@ -55,17 +66,4 @@ pub struct BitmapFont {
     pub line_gap: f32,
     /// The distance from the true pixel bounding box of any given glyph to the bounding box given by [`BitmapGlyph.bitmap_source`](BitmapGlyph).
     pub padding: u32,
-}
-
-impl BitmapFont {
-    pub fn new(ascent: f32, descent: f32, line_gap: f32, padding: u32) -> Self {
-        BitmapFont {
-            glyphs: HashMap::new(),
-            kerning_table: None,
-            ascent,
-            descent,
-            line_gap,
-            padding,
-        }
-    }
 }

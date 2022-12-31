@@ -38,7 +38,7 @@ fn main() {
     let args = Args::parse();
 
     let current_dir = std::env::current_dir().expect("Failed to retrieve current directory");
-    let font_path = current_dir.clone().join(args.font_path);
+    let font_path = current_dir.join(args.font_path);
     let font_data = std::fs::read(font_path).expect("Failed to read font data");
     let font = Font::try_from_vec(font_data).expect("Failed to parse font data");
     let scale = rusttype::Scale::uniform(args.scale);
@@ -52,7 +52,15 @@ fn main() {
         let rusttype::VMetrics {
             ascent, descent, line_gap
         } = font.v_metrics(scale);
-        BitmapFont::new(ascent, descent, line_gap, args.padding)
+
+        BitmapFont {
+            glyphs: HashMap::new(),
+            kerning_table: None,
+            ascent,
+            descent,
+            line_gap,
+            padding: args.padding,
+        }
     };
 
     let mut next_x = 0;
