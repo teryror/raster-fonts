@@ -6,6 +6,7 @@ authors = ["Tristan Dannenberg"]
 description = "Bitmap font creation tool and accompanying metadata deserialization library"
 categories = ["command-line-utilities", "game-development", "graphics", "rendering"]
 keywords = ["gamedev", "graphics", "text-rendering"]
+repository = "https://github.com/teryror/raster-fonts"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
