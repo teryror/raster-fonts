@@ -18,7 +18,7 @@ the metadata required for dynamic text layout calculations; both [`serde`][serde
 ### Installation Using `cargo`
 
 ```
-> cargo install raster-fonts
+> cargo install raster-fonts --features="bin"
 ```
 
 ### Basic Usage
@@ -28,7 +28,7 @@ the metadata required for dynamic text layout calculations; both [`serde`][serde
 ```
 
 This will generate a monochrome signed distance field texture containing all glyphs in the printable
-ASCII range from the given font file. [As described by Chris Green, then working for Valve](valve-paper):
+ASCII range from the given font file. [As described by Chris Green, then working for Valve][valve-paper]:
 
 [valve-paper]: https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf
 
