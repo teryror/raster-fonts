@@ -45,7 +45,7 @@ fn main() {
 
     let max_dist = (args.padding as f32).powi(2);
 
-    let mut outbuf = image::ImageBuffer::new(args.output_image_size, args.output_image_size);
+    let mut outbuf = image::ImageBuffer::<image::Luma<u8>, _>::new(args.output_image_size, args.output_image_size);
     outbuf.fill(0x00);
 
     let mut out_metadata = {
@@ -62,13 +62,6 @@ fn main() {
             padding: args.padding,
         }
     };
-
-    let mut next_x = 0;
-    let mut next_y = 0;
-    let mut next_y_adv = 0;
-
-    let mut outside_buf = vec![];
-    let mut inside_buf = vec![];
 
     let charset = {
         let mut charset = BTreeSet::<char>::new();
@@ -146,48 +139,117 @@ fn main() {
         charset
     };
 
+    let mut bounding_boxes = vec![];
     for &glyph_id in charset.iter() {
-        let glyph = font.glyph(glyph_id).scaled(scale).positioned(rusttype::Point::default());
+        let scaled_glyph = font.glyph(glyph_id).scaled(scale);
+        let rusttype::HMetrics {
+            advance_width,
+            left_side_bearing
+        } = scaled_glyph.h_metrics();
+        let glyph = scaled_glyph.positioned(rusttype::Point::default());
+
         let Some(bounding_box) = glyph.pixel_bounding_box() else {
             if !glyph_id.is_whitespace() {
                 eprintln!("Failed to obtain bounding box for non-whitespace glyph {:x}", glyph_id as u32);
             }
-
-            let rusttype::HMetrics {
-                advance_width,
-                left_side_bearing,
-            } = glyph.unpositioned().h_metrics();
     
             let glyph_metadata = BitmapGlyph { bitmap_source: None, advance_width, left_side_bearing, ascent: f32::NAN };
-    
-            out_metadata.glyphs.insert(glyph_id, glyph_metadata); 
+            out_metadata.glyphs.insert(glyph_id, glyph_metadata);
             continue;
         };
-        
-        let width = bounding_box.width() as u32;
-        let height = bounding_box.height() as u32;
 
-        let padded_w = width + 2 * args.padding;
-        let padded_h = height + 2 * args.padding;
-        let n_pixels = padded_w * padded_h;
-        
-        if next_x + padded_w > args.output_image_size {
-            next_x = 0;
-            next_y += next_y_adv;
-            next_y_adv = 0;
+        let width = bounding_box.width() as u32;
+        let padded_w = width + args.padding * 2;
+
+        let height = bounding_box.height() as u32;
+        let padded_h = height + args.padding * 2;
+
+        if padded_w > 0xFF || padded_h > 0xFF {
+            eprintln!("Glyph {:x} is too large: padded to {padded_w}x{padded_h}, max is 255x255.");
+            continue;
         }
 
-        next_y_adv = u32::max(next_y_adv, padded_h);
-        
-        if let Some(levels) = args.coverage_levels {
+        let ascent = bounding_box.min.y as f32 * -1.0;
+
+        let glyph_metadata = BitmapGlyph { bitmap_source: None, advance_width, left_side_bearing, ascent };
+        out_metadata.glyphs.insert(glyph_id, glyph_metadata);
+        bounding_boxes.push((glyph_id, padded_w, padded_h));
+    }
+    bounding_boxes.sort_by_key(|&(_, w, h)| std::cmp::Reverse(w * h));
+    'glyph_placement: for (glyph_id, w, h) in bounding_boxes.into_iter() {
+        for ty in 0..(args.output_image_size - h) {
+            'search: for tx in 0..(args.output_image_size - w) {
+                let valid = !(
+                    outbuf.get_pixel(tx, ty).0[0] != 0 ||
+                    outbuf.get_pixel(tx + w - 1, ty).0[0] != 0 ||
+                    outbuf.get_pixel(tx, ty + h - 1).0[0] != 0 ||
+                    outbuf.get_pixel(tx + w - 1, ty + h - 1).0[0] != 0
+                );
+
+                if !valid { continue 'search; }
+
+                for ity in 0..h {
+                    for itx in 0..w {
+                        if outbuf.get_pixel(tx + itx, ty + ity).0[0] != 0 {
+                            continue 'search;
+                        }
+                    }
+                }
+
+                for ity in 0..h {
+                    for itx in 0..w {
+                        outbuf.put_pixel(tx + itx, ty + ity, image::Luma([0xFF; 1]));
+                    }
+                }
+
+                let bitmap_source = Some(SourceRect {
+                    x: tx as u16,
+                    y: ty as u16,
+                    width: NonZeroU8::new(w as u8).unwrap(),
+                    height: NonZeroU8::new(h as u8).unwrap()
+                });
+
+                out_metadata.glyphs.get_mut(&glyph_id).unwrap().bitmap_source = bitmap_source;
+                continue 'glyph_placement;
+            }
+        }
+
+        eprintln!("Failed to pack all glyphs! Set a larger output-image-size.");
+        return;
+    }
+
+    outbuf.fill(0x00);
+    if let Some(levels) = args.coverage_levels {
+        for (&glyph_id, glyph_metadata) in out_metadata.glyphs.iter() {
+            let Some(SourceRect { x: tx, y: ty, width: _, height: _ }) = glyph_metadata.bitmap_source else {
+                continue;
+            };
+
+            let glyph = font.glyph(glyph_id).scaled(scale).positioned(rusttype::Point::default());
             glyph.draw(|x, y, v| {
-                let x = next_x + args.padding + x;
-                let y = next_y + args.padding + y;
+                let x = tx as u32 + args.padding + x;
+                let y = ty as u32 + args.padding + y;
                 let pixel_value = (((v * (levels as f32)).round() / (levels as f32)) * 255.0).round() as u8;
                 
-                *outbuf.get_pixel_mut(x, y) = image::Luma([pixel_value; 1]);
+                outbuf.put_pixel(x, y, image::Luma([pixel_value; 1]));
             });
-        } else {
+        }
+    } else {
+        let mut outside_buf = vec![];
+        let mut inside_buf = vec![];
+        for (&glyph_id, glyph_metadata) in out_metadata.glyphs.iter() {
+            let Some(SourceRect { x: tx, y: ty, width, height }) = glyph_metadata.bitmap_source else {
+                continue;
+            };
+
+            let glyph = font.glyph(glyph_id).scaled(scale).positioned(rusttype::Point::default());
+
+            let padded_w = width.get() as u32;
+            let padded_h = height.get() as u32;
+            let n_pixels = padded_w * padded_h;
+
+            let width = padded_w - args.padding * 2;
+            
             outside_buf.clear();
             outside_buf.resize(n_pixels as usize, max_dist);
 
@@ -300,27 +362,10 @@ fn main() {
                     
                     let signed_distance = if outside_distance > 0.0 { -outside_distance } else { inside_distance };
                     let pixel_value = (((signed_distance + 1.0) / 2.0) * 255.0).round() as u8;
-                    *outbuf.get_pixel_mut(next_x + x_here, next_y + y) = image::Luma([pixel_value; 1]);
+                    outbuf.put_pixel(tx as u32 + x_here, ty as u32 + y, image::Luma([pixel_value; 1]));
                 }
             }
         }
-
-        let bitmap_source = Some(SourceRect {
-            x: next_x as u16, y: next_y as u16, width: NonZeroU8::new(padded_w as u8).expect(""), height: NonZeroU8::new(padded_h as u8).expect("")
-        });
-
-        let rusttype::HMetrics {
-            advance_width,
-            left_side_bearing,
-        } = glyph.unpositioned().h_metrics();
-
-        let ascent = bounding_box.min.y as f32 * -1.0;
-
-        let glyph_metadata = BitmapGlyph { bitmap_source, advance_width, left_side_bearing, ascent };
-
-        out_metadata.glyphs.insert(glyph_id, glyph_metadata); 
-
-        next_x += padded_w;
     }
 
     if !args.skip_kerning_table {
