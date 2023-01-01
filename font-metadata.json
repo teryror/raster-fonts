@@ -1,0 +1,2173 @@
+{
+    "glyphs": {
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "Ô": {
+            "bitmap_source": {
+                "x": 145,
+                "y": 0,
+                "width": 33,
+                "height": 35
+            },
+            "advance_width": 17.55519,
+            "left_side_bearing": 0.7907743,
+            "ascent": 18.0
+        },
+        "ö": {
+            "bitmap_source": {
+                "x": 286,
+                "y": 163,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 12.652389,
+            "left_side_bearing": 0.2372323,
+            "ascent": 16.0
+        },
+        "ÿ": {
+            "bitmap_source": {
+                "x": 354,
+                "y": 103,
+                "width": 28,
+                "height": 36
+            },
+            "advance_width": 10.675453,
+            "left_side_bearing": -0.39538714,
+            "ascent": 16.0
+        },
+        "0": {
+            "bitmap_source": {
+                "x": 40,
+                "y": 33,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 17.55519,
+            "left_side_bearing": 0.7907743,
+            "ascent": 16.0
+        },
+        "<": {
+            "bitmap_source": {
+                "x": 340,
+                "y": 172,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 12.553542,
+            "left_side_bearing": 0.3756178,
+            "ascent": 16.0
+        },
+        "K": {
+            "bitmap_source": {
+                "x": 168,
+                "y": 102,
+                "width": 30,
+                "height": 34
+            },
+            "advance_width": 14.787479,
+            "left_side_bearing": 1.4036244,
+            "ascent": 17.0
+        },
+        "Ë": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 168,
+                "width": 28,
+                "height": 34
+            },
+            "advance_width": 13.047776,
+            "left_side_bearing": 0.90939045,
+            "ascent": 17.0
+        },
+        "´": {
+            "bitmap_source": {
+                "x": 233,
+                "y": 317,
+                "width": 25,
+                "height": 21
+            },
+            "advance_width": 13.047776,
+            "left_side_bearing": 2.5502472,
+            "ascent": 17.0
+        },
+        "Þ": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "Ï": {
+            "bitmap_source": {
+                "x": 367,
+                "y": 237,
+                "width": 26,
+                "height": 33
+            },
+            "advance_width": 5.970346,
+            "left_side_bearing": -1.2257001,
+            "ascent": 17.0
+        },
+        "ð": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "L": {
+            "bitmap_source": {
+                "x": 423,
+                "y": 233,
+                "width": 27,
+                "height": 33
+            },
+            "advance_width": 12.553542,
+            "left_side_bearing": 1.1663921,
+            "ascent": 16.0
+        },
+        "Æ": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 0,
+                "width": 40,
+                "height": 34
+            },
+            "advance_width": 20.856672,
+            "left_side_bearing": -2.3327842,
+            "ascent": 17.0
+        },
+        "ó": {
+            "bitmap_source": {
+                "x": 61,
+                "y": 140,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 12.652389,
+            "left_side_bearing": 0.2372323,
+            "ascent": 16.0
+        },
+        ",": {
+            "bitmap_source": {
+                "x": 49,
+                "y": 305,
+                "width": 22,
+                "height": 25
+            },
+            "advance_width": 6.46458,
+            "left_side_bearing": 0.6523888,
+            "ascent": 7.0
+        },
+        "d": {
+            "bitmap_source": {
+                "x": 123,
+                "y": 137,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 12.257002,
+            "left_side_bearing": 0.61285007,
+            "ascent": 16.0
+        },
+        "e": {
+            "bitmap_source": {
+                "x": 280,
+                "y": 271,
+                "width": 28,
+                "height": 29
+            },
+            "advance_width": 11.38715,
+            "left_side_bearing": 0.3360791,
+            "ascent": 12.0
+        },
+        "Ø": {
+            "bitmap_source": {
+                "x": 77,
+                "y": 0,
+                "width": 33,
+                "height": 36
+            },
+            "advance_width": 17.179571,
+            "left_side_bearing": 0.31630972,
+            "ascent": 18.0
+        },
+        "?": {
+            "bitmap_source": {
+                "x": 343,
+                "y": 0,
+                "width": 32,
+                "height": 35
+            },
+            "advance_width": 15.321252,
+            "left_side_bearing": 1.9571664,
+            "ascent": 17.0
+        },
+        "B": {
+            "bitmap_source": {
+                "x": 200,
+                "y": 99,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 14.649094,
+            "left_side_bearing": 0.43492585,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "ù": {
+            "bitmap_source": {
+                "x": 450,
+                "y": 233,
+                "width": 27,
+                "height": 33
+            },
+            "advance_width": 10.675453,
+            "left_side_bearing": 0.71169686,
+            "ascent": 16.0
+        },
+        "6": {
+            "bitmap_source": {
+                "x": 110,
+                "y": 33,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 17.021418,
+            "left_side_bearing": 0.63261944,
+            "ascent": 16.0
+        },
+        "$": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 133,
+                "width": 28,
+                "height": 35
+            },
+            "advance_width": 12.355848,
+            "left_side_bearing": 0.53377265,
+            "ascent": 17.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "o": {
+            "bitmap_source": {
+                "x": 251,
+                "y": 258,
+                "width": 29,
+                "height": 29
+            },
+            "advance_width": 12.652389,
+            "left_side_bearing": 0.2372323,
+            "ascent": 12.0
+        },
+        " ": {
+            "bitmap_source": null,
+            "advance_width": 8.30313,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "U": {
+            "bitmap_source": {
+                "x": 430,
+                "y": 104,
+                "width": 31,
+                "height": 32
+            },
+            "advance_width": 16.30972,
+            "left_side_bearing": 1.1663921,
+            "ascent": 15.0
+        },
+        "F": {
+            "bitmap_source": {
+                "x": 187,
+                "y": 165,
+                "width": 28,
+                "height": 34
+            },
+            "advance_width": 11.149918,
+            "left_side_bearing": 0.6721582,
+            "ascent": 17.0
+        },
+        "3": {
+            "bitmap_source": {
+                "x": 430,
+                "y": 71,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 15.182867,
+            "left_side_bearing": 0.5140033,
+            "ascent": 16.0
+        },
+        "W": {
+            "bitmap_source": {
+                "x": 40,
+                "y": 0,
+                "width": 37,
+                "height": 33
+            },
+            "advance_width": 20.164745,
+            "left_side_bearing": 0.6721582,
+            "ascent": 16.0
+        },
+        "t": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 269,
+                "width": 26,
+                "height": 32
+            },
+            "advance_width": 9.864909,
+            "left_side_bearing": 0.5140033,
+            "ascent": 15.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "@": {
+            "bitmap_source": {
+                "x": 243,
+                "y": 33,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 17.693575,
+            "left_side_bearing": 0.7907743,
+            "ascent": 16.0
+        },
+        "C": {
+            "bitmap_source": {
+                "x": 469,
+                "y": 66,
+                "width": 32,
+                "height": 33
+            },
+            "advance_width": 15.815486,
+            "left_side_bearing": 0.5140033,
+            "ascent": 16.0
+        },
+        "w": {
+            "bitmap_source": {
+                "x": 286,
+                "y": 133,
+                "width": 32,
+                "height": 30
+            },
+            "advance_width": 14.233937,
+            "left_side_bearing": -0.17792422,
+            "ascent": 13.0
+        },
+        "°": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 301,
+                "width": 25,
+                "height": 24
+            },
+            "advance_width": 9.785832,
+            "left_side_bearing": 0.73146623,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "É": {
+            "bitmap_source": {
+                "x": 469,
+                "y": 166,
+                "width": 28,
+                "height": 34
+            },
+            "advance_width": 13.047776,
+            "left_side_bearing": 0.90939045,
+            "ascent": 17.0
+        },
+        "H": {
+            "bitmap_source": {
+                "x": 231,
+                "y": 99,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 15.222405,
+            "left_side_bearing": 0.9686985,
+            "ascent": 16.0
+        },
+        "c": {
+            "bitmap_source": {
+                "x": 295,
+                "y": 242,
+                "width": 29,
+                "height": 29
+            },
+            "advance_width": 12.573312,
+            "left_side_bearing": 0.1383855,
+            "ascent": 12.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "G": {
+            "bitmap_source": {
+                "x": 110,
+                "y": 0,
+                "width": 35,
+                "height": 33
+            },
+            "advance_width": 19.670511,
+            "left_side_bearing": 0.63261944,
+            "ascent": 16.0
+        },
+        "Ú": {
+            "bitmap_source": {
+                "x": 339,
+                "y": 69,
+                "width": 31,
+                "height": 34
+            },
+            "advance_width": 16.30972,
+            "left_side_bearing": 1.1663921,
+            "ascent": 17.0
+        },
+        "n": {
+            "bitmap_source": {
+                "x": 419,
+                "y": 266,
+                "width": 28,
+                "height": 30
+            },
+            "advance_width": 11.663921,
+            "left_side_bearing": 0.9686985,
+            "ascent": 13.0
+        },
+        "1": {
+            "bitmap_source": {
+                "x": 26,
+                "y": 295,
+                "width": 23,
+                "height": 32
+            },
+            "advance_width": 8.362438,
+            "left_side_bearing": 0.830313,
+            "ascent": 16.0
+        },
+        "7": {
+            "bitmap_source": {
+                "x": 63,
+                "y": 107,
+                "width": 30,
+                "height": 33
+            },
+            "advance_width": 12.533772,
+            "left_side_bearing": -0.3756178,
+            "ascent": 16.0
+        },
+        "_": {
+            "bitmap_source": {
+                "x": 335,
+                "y": 303,
+                "width": 29,
+                "height": 20
+            },
+            "advance_width": 11.09061,
+            "left_side_bearing": -0.6919275,
+            "ascent": 3.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "¯": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "Ç": {
+            "bitmap_source": {
+                "x": 407,
+                "y": 0,
+                "width": 32,
+                "height": 35
+            },
+            "advance_width": 15.815486,
+            "left_side_bearing": 0.5140033,
+            "ascent": 16.0
+        },
+        "*": {
+            "bitmap_source": {
+                "x": 422,
+                "y": 296,
+                "width": 26,
+                "height": 27
+            },
+            "advance_width": 11.09061,
+            "left_side_bearing": 1.2652389,
+            "ascent": 16.0
+        },
+        "Ý": {
+            "bitmap_source": {
+                "x": 324,
+                "y": 103,
+                "width": 30,
+                "height": 34
+            },
+            "advance_width": 13.265239,
+            "left_side_bearing": 0.53377265,
+            "ascent": 17.0
+        },
+        "«": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "h": {
+            "bitmap_source": {
+                "x": 396,
+                "y": 204,
+                "width": 27,
+                "height": 34
+            },
+            "advance_width": 10.912685,
+            "left_side_bearing": 0.63261944,
+            "ascent": 17.0
+        },
+        "¶": {
+            "bitmap_source": {
+                "x": 293,
+                "y": 100,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 15.123558,
+            "left_side_bearing": 0.6721582,
+            "ascent": 16.0
+        },
+        "×": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "ê": {
+            "bitmap_source": {
+                "x": 113,
+                "y": 202,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.38715,
+            "left_side_bearing": 0.3360791,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "¥": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "À": {
+            "bitmap_source": {
+                "x": 342,
+                "y": 35,
+                "width": 32,
+                "height": 34
+            },
+            "advance_width": 14.886326,
+            "left_side_bearing": -0.63261944,
+            "ascent": 17.0
+        },
+        "D": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 67,
+                "width": 32,
+                "height": 33
+            },
+            "advance_width": 16.01318,
+            "left_side_bearing": 0.71169686,
+            "ascent": 16.0
+        },
+        "º": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "û": {
+            "bitmap_source": {
+                "x": 258,
+                "y": 133,
+                "width": 28,
+                "height": 35
+            },
+            "advance_width": 10.675453,
+            "left_side_bearing": -0.31630972,
+            "ascent": 18.0
+        },
+        "ü": {
+            "bitmap_source": {
+                "x": 477,
+                "y": 233,
+                "width": 27,
+                "height": 33
+            },
+            "advance_width": 10.675453,
+            "left_side_bearing": 0.71169686,
+            "ascent": 16.0
+        },
+        "Ê": {
+            "bitmap_source": {
+                "x": 401,
+                "y": 69,
+                "width": 29,
+                "height": 36
+            },
+            "advance_width": 13.047776,
+            "left_side_bearing": 0.7512356,
+            "ascent": 19.0
+        },
+        "Î": {
+            "bitmap_source": {
+                "x": 347,
+                "y": 139,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 5.970346,
+            "left_side_bearing": -2.4514003,
+            "ascent": 17.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "T": {
+            "bitmap_source": {
+                "x": 31,
+                "y": 129,
+                "width": 30,
+                "height": 33
+            },
+            "advance_width": 12.257002,
+            "left_side_bearing": 0.39538714,
+            "ascent": 16.0
+        },
+        "]": {
+            "bitmap_source": {
+                "x": 162,
+                "y": 263,
+                "width": 24,
+                "height": 35
+            },
+            "advance_width": 8.00659,
+            "left_side_bearing": 0.5930807,
+            "ascent": 17.0
+        },
+        ")": {
+            "bitmap_source": {
+                "x": 26,
+                "y": 260,
+                "width": 24,
+                "height": 35
+            },
+            "advance_width": 8.30313,
+            "left_side_bearing": 0.7907743,
+            "ascent": 17.0
+        },
+        "O": {
+            "bitmap_source": {
+                "x": 207,
+                "y": 67,
+                "width": 33,
+                "height": 32
+            },
+            "advance_width": 17.179571,
+            "left_side_bearing": 0.31630972,
+            "ascent": 16.0
+        },
+        "å": {
+            "bitmap_source": {
+                "x": 152,
+                "y": 169,
+                "width": 28,
+                "height": 34
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.49423394,
+            "ascent": 17.0
+        },
+        "Ü": {
+            "bitmap_source": {
+                "x": 370,
+                "y": 69,
+                "width": 31,
+                "height": 34
+            },
+            "advance_width": 16.30972,
+            "left_side_bearing": 1.1663921,
+            "ascent": 17.0
+        },
+        "õ": {
+            "bitmap_source": {
+                "x": 28,
+                "y": 162,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 12.652389,
+            "left_side_bearing": 0.2372323,
+            "ascent": 16.0
+        },
+        "Â": {
+            "bitmap_source": {
+                "x": 406,
+                "y": 35,
+                "width": 32,
+                "height": 34
+            },
+            "advance_width": 14.886326,
+            "left_side_bearing": -0.63261944,
+            "ascent": 17.0
+        },
+        "Ð": {
+            "bitmap_source": {
+                "x": 243,
+                "y": 0,
+                "width": 34,
+                "height": 33
+            },
+            "advance_width": 17.891268,
+            "left_side_bearing": 0.3756178,
+            "ascent": 16.0
+        },
+        "\\": {
+            "bitmap_source": {
+                "x": 57,
+                "y": 173,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.169687,
+            "left_side_bearing": 0.25700164,
+            "ascent": 16.0
+        },
+        "è": {
+            "bitmap_source": {
+                "x": 198,
+                "y": 232,
+                "width": 28,
+                "height": 32
+            },
+            "advance_width": 11.38715,
+            "left_side_bearing": 0.3360791,
+            "ascent": 15.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "5": {
+            "bitmap_source": {
+                "x": 97,
+                "y": 99,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 15.439868,
+            "left_side_bearing": 1.6210873,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "X": {
+            "bitmap_source": {
+                "x": 93,
+                "y": 132,
+                "width": 30,
+                "height": 33
+            },
+            "advance_width": 15.103789,
+            "left_side_bearing": 1.0280066,
+            "ascent": 16.0
+        },
+        "j": {
+            "bitmap_source": {
+                "x": 325,
+                "y": 239,
+                "width": 23,
+                "height": 37
+            },
+            "advance_width": 4.8434925,
+            "left_side_bearing": -1.6210873,
+            "ascent": 16.0
+        },
+        ";": {
+            "bitmap_source": {
+                "x": 400,
+                "y": 296,
+                "width": 22,
+                "height": 32
+            },
+            "advance_width": 7.6507416,
+            "left_side_bearing": 0.81054366,
+            "ascent": 12.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "§": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "m": {
+            "bitmap_source": {
+                "x": 264,
+                "y": 229,
+                "width": 31,
+                "height": 29
+            },
+            "advance_width": 15.06425,
+            "left_side_bearing": 0.39538714,
+            "ascent": 12.0
+        },
+        "Í": {
+            "bitmap_source": {
+                "x": 56,
+                "y": 241,
+                "width": 25,
+                "height": 34
+            },
+            "advance_width": 5.970346,
+            "left_side_bearing": -0.8896211,
+            "ascent": 18.0
+        },
+        "[": {
+            "bitmap_source": {
+                "x": 81,
+                "y": 263,
+                "width": 24,
+                "height": 35
+            },
+            "advance_width": 8.00659,
+            "left_side_bearing": 0.8896211,
+            "ascent": 17.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "ë": {
+            "bitmap_source": {
+                "x": 236,
+                "y": 202,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.38715,
+            "left_side_bearing": 0.3360791,
+            "ascent": 16.0
+        },
+        "Q": {
+            "bitmap_source": {
+                "x": 210,
+                "y": 0,
+                "width": 33,
+                "height": 34
+            },
+            "advance_width": 17.55519,
+            "left_side_bearing": 0.7907743,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "î": {
+            "bitmap_source": {
+                "x": 141,
+                "y": 203,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 6.7611203,
+            "left_side_bearing": -2.214168,
+            "ascent": 16.0
+        },
+        "®": {
+            "bitmap_source": {
+                "x": 210,
+                "y": 34,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 17.693575,
+            "left_side_bearing": 0.7907743,
+            "ascent": 16.0
+        },
+        "'": {
+            "bitmap_source": {
+                "x": 211,
+                "y": 303,
+                "width": 22,
+                "height": 26
+            },
+            "advance_width": 5.3377266,
+            "left_side_bearing": 0.9489292,
+            "ascent": 17.0
+        },
+        "Ì": {
+            "bitmap_source": {
+                "x": 136,
+                "y": 269,
+                "width": 25,
+                "height": 33
+            },
+            "advance_width": 5.970346,
+            "left_side_bearing": -0.5140033,
+            "ascent": 17.0
+        },
+        "ï": {
+            "bitmap_source": {
+                "x": 393,
+                "y": 238,
+                "width": 26,
+                "height": 33
+            },
+            "advance_width": 6.7611203,
+            "left_side_bearing": -1.107084,
+            "ascent": 16.0
+        },
+        "·": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "9": {
+            "bitmap_source": {
+                "x": 168,
+                "y": 70,
+                "width": 32,
+                "height": 32
+            },
+            "advance_width": 17.021418,
+            "left_side_bearing": 0.90939045,
+            "ascent": 16.0
+        },
+        "f": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 235,
+                "width": 26,
+                "height": 34
+            },
+            "advance_width": 7.7693577,
+            "left_side_bearing": 0.4744646,
+            "ascent": 17.0
+        },
+        "k": {
+            "bitmap_source": {
+                "x": 28,
+                "y": 195,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.268534,
+            "left_side_bearing": 0.8896211,
+            "ascent": 16.0
+        },
+        "%": {
+            "bitmap_source": {
+                "x": 470,
+                "y": 0,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 17.495882,
+            "left_side_bearing": 0.73146623,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "¡": {
+            "bitmap_source": {
+                "x": 226,
+                "y": 235,
+                "width": 25,
+                "height": 35
+            },
+            "advance_width": 8.91598,
+            "left_side_bearing": 0.553542,
+            "ascent": 18.0
+        },
+        ":": {
+            "bitmap_source": {
+                "x": 285,
+                "y": 300,
+                "width": 21,
+                "height": 28
+            },
+            "advance_width": 7.6507416,
+            "left_side_bearing": 1.996705,
+            "ascent": 12.0
+        },
+        "i": {
+            "bitmap_source": {
+                "x": 161,
+                "y": 298,
+                "width": 20,
+                "height": 33
+            },
+            "advance_width": 4.8434925,
+            "left_side_bearing": 1.107084,
+            "ascent": 16.0
+        },
+        "Z": {
+            "bitmap_source": {
+                "x": 228,
+                "y": 132,
+                "width": 30,
+                "height": 33
+            },
+            "advance_width": 14.668863,
+            "left_side_bearing": 0.9884679,
+            "ascent": 16.0
+        },
+        "£": {
+            "bitmap_source": {
+                "x": 382,
+                "y": 138,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 12.948929,
+            "left_side_bearing": 0.4151565,
+            "ascent": 16.0
+        },
+        "M": {
+            "bitmap_source": {
+                "x": 470,
+                "y": 33,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 18.543657,
+            "left_side_bearing": 1.107084,
+            "ascent": 16.0
+        },
+        "l": {
+            "bitmap_source": {
+                "x": 265,
+                "y": 300,
+                "width": 20,
+                "height": 33
+            },
+            "advance_width": 4.210873,
+            "left_side_bearing": 0.81054366,
+            "ascent": 16.0
+        },
+        "|": {
+            "bitmap_source": {
+                "x": 136,
+                "y": 236,
+                "width": 26,
+                "height": 33
+            },
+            "advance_width": 10.438221,
+            "left_side_bearing": 0.4744646,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "»": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "Ã": {
+            "bitmap_source": {
+                "x": 73,
+                "y": 36,
+                "width": 32,
+                "height": 34
+            },
+            "advance_width": 14.886326,
+            "left_side_bearing": -0.63261944,
+            "ascent": 17.0
+        },
+        "Ñ": {
+            "bitmap_source": {
+                "x": 128,
+                "y": 103,
+                "width": 30,
+                "height": 34
+            },
+            "advance_width": 15.657331,
+            "left_side_bearing": 1.0082372,
+            "ascent": 17.0
+        },
+        ">": {
+            "bitmap_source": {
+                "x": 158,
+                "y": 136,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 12.553542,
+            "left_side_bearing": 0.73146623,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "N": {
+            "bitmap_source": {
+                "x": 461,
+                "y": 99,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 16.744646,
+            "left_side_bearing": 1.4431632,
+            "ascent": 16.0
+        },
+        "`": {
+            "bitmap_source": {
+                "x": 306,
+                "y": 306,
+                "width": 25,
+                "height": 21
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 2.214168,
+            "ascent": 18.0
+        },
+        "b": {
+            "bitmap_source": {
+                "x": 28,
+                "y": 228,
+                "width": 28,
+                "height": 32
+            },
+            "advance_width": 12.0,
+            "left_side_bearing": 0.63261944,
+            "ascent": 15.0
+        },
+        "Ó": {
+            "bitmap_source": {
+                "x": 277,
+                "y": 0,
+                "width": 33,
+                "height": 34
+            },
+            "advance_width": 17.55519,
+            "left_side_bearing": 0.7907743,
+            "ascent": 17.0
+        },
+        "Ö": {
+            "bitmap_source": {
+                "x": 309,
+                "y": 34,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 17.55519,
+            "left_side_bearing": 0.7907743,
+            "ascent": 16.0
+        },
+        "Ù": {
+            "bitmap_source": {
+                "x": 137,
+                "y": 69,
+                "width": 31,
+                "height": 34
+            },
+            "advance_width": 16.30972,
+            "left_side_bearing": 1.1663921,
+            "ascent": 17.0
+        },
+        "P": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 100,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 13.838551,
+            "left_side_bearing": 0.63261944,
+            "ascent": 16.0
+        },
+        "g": {
+            "bitmap_source": {
+                "x": 215,
+                "y": 165,
+                "width": 28,
+                "height": 34
+            },
+            "advance_width": 11.742998,
+            "left_side_bearing": 0.31630972,
+            "ascent": 13.0
+        },
+        "s": {
+            "bitmap_source": {
+                "x": 447,
+                "y": 266,
+                "width": 28,
+                "height": 30
+            },
+            "advance_width": 11.901154,
+            "left_side_bearing": 0.15815486,
+            "ascent": 13.0
+        },
+        "Û": {
+            "bitmap_source": {
+                "x": 438,
+                "y": 36,
+                "width": 31,
+                "height": 35
+            },
+            "advance_width": 16.30972,
+            "left_side_bearing": 1.1663921,
+            "ascent": 18.0
+        },
+        "È": {
+            "bitmap_source": {
+                "x": 441,
+                "y": 166,
+                "width": 28,
+                "height": 34
+            },
+            "advance_width": 13.047776,
+            "left_side_bearing": 0.90939045,
+            "ascent": 17.0
+        },
+        "J": {
+            "bitmap_source": {
+                "x": 412,
+                "y": 136,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 14.135091,
+            "left_side_bearing": 1.1268533,
+            "ascent": 16.0
+        },
+        "~": {
+            "bitmap_source": {
+                "x": 129,
+                "y": 302,
+                "width": 29,
+                "height": 21
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.3756178,
+            "ascent": 18.0
+        },
+        "ª": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "á": {
+            "bitmap_source": {
+                "x": 208,
+                "y": 199,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.49423394,
+            "ascent": 16.0
+        },
+        "ô": {
+            "bitmap_source": {
+                "x": 461,
+                "y": 132,
+                "width": 29,
+                "height": 34
+            },
+            "advance_width": 12.652389,
+            "left_side_bearing": 0.2372323,
+            "ascent": 17.0
+        },
+        "^": {
+            "bitmap_source": {
+                "x": 473,
+                "y": 296,
+                "width": 28,
+                "height": 25
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.5140033,
+            "ascent": 21.0
+        },
+        "ø": {
+            "bitmap_source": {
+                "x": 169,
+                "y": 232,
+                "width": 29,
+                "height": 31
+            },
+            "advance_width": 12.652389,
+            "left_side_bearing": 0.2372323,
+            "ascent": 13.0
+        },
+        "ä": {
+            "bitmap_source": {
+                "x": 466,
+                "y": 200,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.49423394,
+            "ascent": 16.0
+        },
+        "þ": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "2": {
+            "bitmap_source": {
+                "x": 382,
+                "y": 105,
+                "width": 30,
+                "height": 33
+            },
+            "advance_width": 16.092257,
+            "left_side_bearing": 1.383855,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "í": {
+            "bitmap_source": {
+                "x": 348,
+                "y": 270,
+                "width": 25,
+                "height": 33
+            },
+            "advance_width": 6.7611203,
+            "left_side_bearing": -0.8698517,
+            "ascent": 16.0
+        },
+        "z": {
+            "bitmap_source": {
+                "x": 308,
+                "y": 276,
+                "width": 27,
+                "height": 30
+            },
+            "advance_width": 10.971993,
+            "left_side_bearing": 0.39538714,
+            "ascent": 13.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "³": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "a": {
+            "bitmap_source": {
+                "x": 186,
+                "y": 264,
+                "width": 28,
+                "height": 30
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.49423394,
+            "ascent": 13.0
+        },
+        "¼": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "ß": {
+            "bitmap_source": {
+                "x": 439,
+                "y": 0,
+                "width": 31,
+                "height": 36
+            },
+            "advance_width": 14.649094,
+            "left_side_bearing": 0.9291598,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "v": {
+            "bitmap_source": {
+                "x": 475,
+                "y": 266,
+                "width": 28,
+                "height": 30
+            },
+            "advance_width": 10.200989,
+            "left_side_bearing": -0.059308074,
+            "ascent": 13.0
+        },
+        "é": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 202,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.38715,
+            "left_side_bearing": 0.3360791,
+            "ascent": 16.0
+        },
+        "÷": {
+            "bitmap_source": {
+                "x": 186,
+                "y": 294,
+                "width": 25,
+                "height": 30
+            },
+            "advance_width": 11.09061,
+            "left_side_bearing": 1.0280066,
+            "ascent": 15.0
+        },
+        "ú": {
+            "bitmap_source": {
+                "x": 340,
+                "y": 205,
+                "width": 27,
+                "height": 34
+            },
+            "advance_width": 10.675453,
+            "left_side_bearing": 0.71169686,
+            "ascent": 17.0
+        },
+        "ý": {
+            "bitmap_source": {
+                "x": 69,
+                "y": 70,
+                "width": 28,
+                "height": 37
+            },
+            "advance_width": 10.675453,
+            "left_side_bearing": -0.39538714,
+            "ascent": 17.0
+        },
+        "E": {
+            "bitmap_source": {
+                "x": 90,
+                "y": 165,
+                "width": 28,
+                "height": 34
+            },
+            "advance_width": 12.850082,
+            "left_side_bearing": 0.830313,
+            "ascent": 17.0
+        },
+        "\"": {
+            "bitmap_source": {
+                "x": 77,
+                "y": 298,
+                "width": 26,
+                "height": 26
+            },
+            "advance_width": 9.588139,
+            "left_side_bearing": 0.73146623,
+            "ascent": 18.0
+        },
+        "¸": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "Å": {
+            "bitmap_source": {
+                "x": 178,
+                "y": 0,
+                "width": 32,
+                "height": 36
+            },
+            "advance_width": 14.886326,
+            "left_side_bearing": -0.63261944,
+            "ascent": 19.0
+        },
+        "+": {
+            "bitmap_source": {
+                "x": 448,
+                "y": 296,
+                "width": 25,
+                "height": 28
+            },
+            "advance_width": 11.09061,
+            "left_side_bearing": 1.0280066,
+            "ascent": 14.0
+        },
+        "â": {
+            "bitmap_source": {
+                "x": 243,
+                "y": 168,
+                "width": 28,
+                "height": 34
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.49423394,
+            "ascent": 17.0
+        },
+        "ã": {
+            "bitmap_source": {
+                "x": 438,
+                "y": 200,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.49423394,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "¢": {
+            "bitmap_source": {
+                "x": 411,
+                "y": 169,
+                "width": 27,
+                "height": 35
+            },
+            "advance_width": 12.355848,
+            "left_side_bearing": 0.0,
+            "ascent": 17.0
+        },
+        "-": {
+            "bitmap_source": {
+                "x": 373,
+                "y": 301,
+                "width": 27,
+                "height": 22
+            },
+            "advance_width": 12.1581545,
+            "left_side_bearing": 1.0675453,
+            "ascent": 11.0
+        },
+        "­": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        ".": {
+            "bitmap_source": {
+                "x": 129,
+                "y": 323,
+                "width": 21,
+                "height": 20
+            },
+            "advance_width": 7.6507416,
+            "left_side_bearing": 1.996705,
+            "ascent": 4.0
+        },
+        "q": {
+            "bitmap_source": {
+                "x": 318,
+                "y": 137,
+                "width": 29,
+                "height": 33
+            },
+            "advance_width": 12.257002,
+            "left_side_bearing": 0.61285007,
+            "ascent": 13.0
+        },
+        "¹": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "x": {
+            "bitmap_source": {
+                "x": 105,
+                "y": 270,
+                "width": 28,
+                "height": 30
+            },
+            "advance_width": 11.723229,
+            "left_side_bearing": 0.276771,
+            "ascent": 13.0
+        },
+        "©": {
+            "bitmap_source": {
+                "x": 0,
+                "y": 34,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 17.693575,
+            "left_side_bearing": 0.7907743,
+            "ascent": 16.0
+        },
+        "¤": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "#": {
+            "bitmap_source": {
+                "x": 373,
+                "y": 271,
+                "width": 27,
+                "height": 30
+            },
+            "advance_width": 13.047776,
+            "left_side_bearing": 1.0873146,
+            "ascent": 15.0
+        },
+        "¬": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "²": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "±": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "µ": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "Ò": {
+            "bitmap_source": {
+                "x": 276,
+                "y": 34,
+                "width": 33,
+                "height": 33
+            },
+            "advance_width": 17.55519,
+            "left_side_bearing": 0.7907743,
+            "ascent": 16.0
+        },
+        "½": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "{": {
+            "bitmap_source": {
+                "x": 56,
+                "y": 206,
+                "width": 26,
+                "height": 35
+            },
+            "advance_width": 11.09061,
+            "left_side_bearing": 0.9489292,
+            "ascent": 17.0
+        },
+        "à": {
+            "bitmap_source": {
+                "x": 180,
+                "y": 199,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.98023,
+            "left_side_bearing": 0.49423394,
+            "ascent": 16.0
+        },
+        "æ": {
+            "bitmap_source": {
+                "x": 33,
+                "y": 66,
+                "width": 36,
+                "height": 30
+            },
+            "advance_width": 20.362438,
+            "left_side_bearing": 0.49423394,
+            "ascent": 13.0
+        },
+        "S": {
+            "bitmap_source": {
+                "x": 275,
+                "y": 67,
+                "width": 32,
+                "height": 33
+            },
+            "advance_width": 16.092257,
+            "left_side_bearing": 0.7907743,
+            "ascent": 16.0
+        },
+        "r": {
+            "bitmap_source": {
+                "x": 239,
+                "y": 287,
+                "width": 26,
+                "height": 30
+            },
+            "advance_width": 8.362438,
+            "left_side_bearing": 0.553542,
+            "ascent": 13.0
+        },
+        "V": {
+            "bitmap_source": {
+                "x": 307,
+                "y": 67,
+                "width": 32,
+                "height": 33
+            },
+            "advance_width": 14.036243,
+            "left_side_bearing": -0.25700164,
+            "ascent": 16.0
+        },
+        "A": {
+            "bitmap_source": {
+                "x": 243,
+                "y": 66,
+                "width": 32,
+                "height": 33
+            },
+            "advance_width": 14.886326,
+            "left_side_bearing": -0.63261944,
+            "ascent": 16.0
+        },
+        "}": {
+            "bitmap_source": {
+                "x": 299,
+                "y": 207,
+                "width": 26,
+                "height": 35
+            },
+            "advance_width": 11.09061,
+            "left_side_bearing": 0.9489292,
+            "ascent": 17.0
+        },
+        "&": {
+            "bitmap_source": {
+                "x": 143,
+                "y": 35,
+                "width": 32,
+                "height": 34
+            },
+            "advance_width": 16.902802,
+            "left_side_bearing": 0.830313,
+            "ascent": 17.0
+        },
+        "I": {
+            "bitmap_source": {
+                "x": 490,
+                "y": 132,
+                "width": 20,
+                "height": 33
+            },
+            "advance_width": 5.970346,
+            "left_side_bearing": 1.7199341,
+            "ascent": 16.0
+        },
+        "Y": {
+            "bitmap_source": {
+                "x": 198,
+                "y": 132,
+                "width": 30,
+                "height": 33
+            },
+            "advance_width": 13.265239,
+            "left_side_bearing": 0.53377265,
+            "ascent": 16.0
+        },
+        "=": {
+            "bitmap_source": {
+                "x": 103,
+                "y": 300,
+                "width": 26,
+                "height": 26
+            },
+            "advance_width": 11.09061,
+            "left_side_bearing": 1.1268533,
+            "ascent": 13.0
+        },
+        "p": {
+            "bitmap_source": {
+                "x": 271,
+                "y": 196,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.327842,
+            "left_side_bearing": 0.39538714,
+            "ascent": 12.0
+        },
+        "u": {
+            "bitmap_source": {
+                "x": 50,
+                "y": 275,
+                "width": 27,
+                "height": 30
+            },
+            "advance_width": 10.675453,
+            "left_side_bearing": 0.71169686,
+            "ascent": 13.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "(": {
+            "bitmap_source": {
+                "x": 111,
+                "y": 235,
+                "width": 25,
+                "height": 35
+            },
+            "advance_width": 9.23229,
+            "left_side_bearing": 0.29654035,
+            "ascent": 17.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "/": {
+            "bitmap_source": {
+                "x": 376,
+                "y": 171,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 10.003295,
+            "left_side_bearing": -0.2372323,
+            "ascent": 16.0
+        },
+        "¨": {
+            "bitmap_source": {
+                "x": 473,
+                "y": 321,
+                "width": 26,
+                "height": 20
+            },
+            "advance_width": 11.742998,
+            "left_side_bearing": 1.5024712,
+            "ascent": 17.0
+        },
+        "¾": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "!": {
+            "bitmap_source": {
+                "x": 315,
+                "y": 170,
+                "width": 25,
+                "height": 37
+            },
+            "advance_width": 8.91598,
+            "left_side_bearing": 0.39538714,
+            "ascent": 18.0
+        },
+        "¦": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "¿": {
+            "bitmap_source": {
+                "x": 375,
+                "y": 0,
+                "width": 32,
+                "height": 35
+            },
+            "advance_width": 16.724876,
+            "left_side_bearing": 0.6721582,
+            "ascent": 18.0
+        },
+        "Á": {
+            "bitmap_source": {
+                "x": 374,
+                "y": 35,
+                "width": 32,
+                "height": 34
+            },
+            "advance_width": 14.886326,
+            "left_side_bearing": -0.63261944,
+            "ascent": 17.0
+        },
+        "Ä": {
+            "bitmap_source": {
+                "x": 175,
+                "y": 36,
+                "width": 32,
+                "height": 34
+            },
+            "advance_width": 14.886326,
+            "left_side_bearing": -0.63261944,
+            "ascent": 17.0
+        },
+        " ": {
+            "bitmap_source": null,
+            "advance_width": 10.873147,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "4": {
+            "bitmap_source": {
+                "x": 32,
+                "y": 96,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 15.222405,
+            "left_side_bearing": 0.8896211,
+            "ascent": 16.0
+        },
+        "": {
+            "bitmap_source": null,
+            "advance_width": 19.769358,
+            "left_side_bearing": 0.0,
+            "ascent": 0.0
+        },
+        "Õ": {
+            "bitmap_source": {
+                "x": 310,
+                "y": 0,
+                "width": 33,
+                "height": 34
+            },
+            "advance_width": 17.55519,
+            "left_side_bearing": 0.7907743,
+            "ascent": 17.0
+        },
+        "R": {
+            "bitmap_source": {
+                "x": 262,
+                "y": 100,
+                "width": 31,
+                "height": 33
+            },
+            "advance_width": 15.420099,
+            "left_side_bearing": 0.81054366,
+            "ascent": 16.0
+        },
+        "ç": {
+            "bitmap_source": {
+                "x": 82,
+                "y": 232,
+                "width": 29,
+                "height": 31
+            },
+            "advance_width": 12.810544,
+            "left_side_bearing": 0.1383855,
+            "ascent": 12.0
+        },
+        "8": {
+            "bitmap_source": {
+                "x": 105,
+                "y": 66,
+                "width": 32,
+                "height": 33
+            },
+            "advance_width": 15.459638,
+            "left_side_bearing": 0.5930807,
+            "ascent": 16.0
+        },
+        "ì": {
+            "bitmap_source": {
+                "x": 214,
+                "y": 270,
+                "width": 25,
+                "height": 33
+            },
+            "advance_width": 6.7611203,
+            "left_side_bearing": -0.8698517,
+            "ascent": 16.0
+        },
+        "y": {
+            "bitmap_source": {
+                "x": 85,
+                "y": 199,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 10.7743,
+            "left_side_bearing": -0.39538714,
+            "ascent": 13.0
+        },
+        "ñ": {
+            "bitmap_source": {
+                "x": 368,
+                "y": 204,
+                "width": 28,
+                "height": 33
+            },
+            "advance_width": 11.663921,
+            "left_side_bearing": 0.9489292,
+            "ascent": 16.0
+        },
+        "ò": {
+            "bitmap_source": {
+                "x": 118,
+                "y": 170,
+                "width": 29,
+                "height": 32
+            },
+            "advance_width": 12.652389,
+            "left_side_bearing": 0.2372323,
+            "ascent": 15.0
+        }
+    },
+    "kerning_table": null,
+    "ascent": 20.04613,
+    "descent": -3.9538715,
+    "line_gap": 1.7990116,
+    "padding": 8
+}
