@@ -153,7 +153,7 @@ fn main() {
                 eprintln!("Failed to obtain bounding box for non-whitespace glyph {:x}", glyph_id as u32);
             }
     
-            let glyph_metadata = BitmapGlyph { bitmap_source: None, advance_width, left_side_bearing, ascent: f32::NAN };
+            let glyph_metadata = BitmapGlyph { bitmap_source: None, advance_width, left_side_bearing, ascent: 0.0 };
             out_metadata.glyphs.insert(glyph_id, glyph_metadata);
             continue;
         };
@@ -165,7 +165,7 @@ fn main() {
         let padded_h = height + args.padding * 2;
 
         if padded_w > 0xFF || padded_h > 0xFF {
-            eprintln!("Glyph {:x} is too large: padded to {padded_w}x{padded_h}, max is 255x255.");
+            eprintln!("Glyph {:x} is too large: padded to {padded_w}x{padded_h}, max is 255x255.", glyph_id as u32);
             continue;
         }
 
